@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>С днём рождения, Дашенция!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #fdeff2 0%, #ffd9e5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 48px;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.3);
+            overflow: hidden;
+            backdrop-filter: blur(2px);
+            transition: transform 0.3s ease;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            padding: 35px 20px 25px;
+            text-align: center;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            letter-spacing: 1px;
+        }
+
+        .hero .name {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #fff, #ffe6f0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 15px 0;
+        }
+
+        .hero .nickname {
+            font-size: 1.8rem;
+            color: #fff3e6;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .heart {
+            font-size: 4rem;
+            animation: pulse 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .content {
+            padding: 30px 30px 40px;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a2e33;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .message p {
+            margin-bottom: 18px;
+        }
+
+        .signature {
+            text-align: right;
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 20px;
+            border-top: 1px solid #ffccd5;
+            padding-top: 20px;
+            color: #b14b5e;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ff6b82;
+            color: white;
+            text-decoration: none;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(255,107,130,0.4);
+            cursor: pointer;
+            border: none;
+        }
+
+        .button:hover {
+            background: #e0526a;
+            transform: scale(0.98);
+        }
+
+        .flower {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 25px;
+            letter-spacing: 5px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #b48b94;
+            padding: 15px;
+            background: #fff2f5;
+        }
+
+        @media (max-width: 550px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero .name { font-size: 2.4rem; }
+            .hero .nickname { font-size: 1.4rem; }
+            .message { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hero">
+            <div class="heart">❤️</div>
+            <h1>С Днём Рождения,</h1>
+            <div class="name">Даша</div>
+            <div class="nickname">моя Дашенция ✨</div>
+            <div class="heart">🎂</div>
+        </div>
+        <div class="content">
+            <div class="message">
+                <p>Моя любимая, самая нежная, самая красивая девочка на свете!</p>
+                <p>Сегодня твой день, и я хочу, чтобы ты знала: ты — лучшее, что со мной случилось. Я люблю тебя больше всего на свете. Каждый миг без тебя — вечность, и я безумно скучаю, когда мы не рядом.</p>
+                <p>Твоя улыбка освещает всё вокруг, твой голос успокаивает, а твоё тепло я чувствую даже на расстоянии. Ты — моя радость, моя опора, мой самый родной человек.</p>
+                <p>Спасибо, что ты есть. Пусть этот год принесёт тебе море улыбок, исполнение всех мечтаний и только тёплые дни. Пусть всё задуманное обязательно сбудется, а я всегда буду рядом, чтобы разделить с тобой каждый момент.</p>
+                <p>С днём рождения, моя Дашуленция! 💕</p>
+            </div>
+            <div class="signature">
+                Всегда твой,<br>
+                <strong>Димитреско(Димка)</strong>
+            </div>
+            <div style="text-align: center;">
+                <button class="button" onclick="alert('Я тебя очень сильно люблю! ❤️ Скучаю!')">Нажми, если скучаешь</button>
+            </div>
+            <div class="flower">
+                🌸 🌼 🌻 🌺 🌹
+            </div>
+        </div>
+        <footer>
+            Для моей единственной Дашенции с любовью
+        </footer>
+    </div>
+</body>
+</html>
